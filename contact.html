@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<!-- 
+***********************************************
+*Author: Baruch Flores                        *
+*Homework 2.2: Responsive Portfolio           *
+*UCB Extension - Full-Stack Bootcamp          *
+*May 2018                                     *
+***********************************************
+-->  
+
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Baruch Portfolio</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <div class="navBar">
+        <nav class="nav_container">
+            <h1 class="name">Baruch Flores</h1>
+            <div class="nav_menu">
+                <a class="about" href="index.html">About</a>&emsp;
+                <span class="separator">|</span>&emsp;
+                <a class="portfolio" href="portfolio.html">Portfolio</a>&emsp;
+                <span class="separator">|</span>&emsp;
+                <a class="contact" href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <section class="main_content">
+            <h1 class="contact_h1">Contact</h1>
+            <hr>
+            <form class="contact_form">
+                Name
+                <br>
+                <input class="input_name" type="text" name="name" onfocus="this.value='';" value="&lt;type your name here&gt;">
+                <br> Email
+                <br>
+                <input class="input_email" type="text" name="email" onfocus="this.value='';" value="&lt;example@gmail.com&gt;">
+                <br> Message
+                <br>
+                <textarea class="textarea_message" rows="20"></textarea>
+                <br>
+                <input class="input_submit" type="submit" name="submit" value="Submit">
+            </form>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p class="copyright">Copyright &copy;</p>
+    </footer>
+
+</body>
+
+</html>

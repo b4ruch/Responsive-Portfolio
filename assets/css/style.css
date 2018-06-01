@@ -1,0 +1,285 @@
+/**********************************************
+*Author: Baruch Flores                        *
+*Homework 2.2: Responsive Portfolio           *
+*UCB Extension - Full-Stack Bootcamp          *
+*May 2018                                     *
+***********************************************/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-image: url("../images/background.png");
+    color: #777;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100%;
+    position: relative;
+    padding-bottom: 117px;
+    /*accounts for footer height and desired distance from body content*/
+}
+
+h1 {
+    color: #4aaaa5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 28px;
+    font-weight: Bold;
+}
+
+.navBar {
+    background-color: #fff;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: #ccc;
+    overflow: auto;
+}
+
+.nav_container {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.name {
+    background-color: #4aaaa5;
+    color: #fff;
+    padding: 30px;
+    float: left;
+}
+
+.nav_menu {
+    float: right;
+    padding: 30px;
+    padding-right: 0;
+    color: #777;
+}
+
+.about, .portfolio, .contact {
+    text-decoration-line: none;
+    color: #777;
+}
+
+.separator {
+    font-weight: 100;
+    color: #f3f3f3;
+}
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+.container {
+    clear: both;
+    width: 960px;
+    margin: 40px auto 0 auto;
+    background-color: #fff;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #dddddd;
+    padding: 40px;
+    overflow: auto;
+}
+
+hr {
+    border: none;
+    background-color: #dddddd;
+    color: #dddddd;
+    height: 2.5px;
+    margin: 30px 0 30px 0;
+}
+
+.about_me_img {
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin-right: 20px;
+}
+
+.p_content, br {
+    line-height: 180%;
+    /* letter-spacing: 0.5px; */
+}
+
+.p_content {
+    margin-top: -10px;
+}
+
+.project {
+    position: relative;
+    float: left;
+    margin-right: 25px;
+    margin-bottom: 30px;
+}
+
+.project_image {
+    width: 220px;
+    height: 176px;
+}
+
+.project_title {
+    background-color: #4aaaa5;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.br_portfolio {
+    clear: both;
+    line-height: 180%;
+    /* letter-spacing: 0.5px; */
+}
+
+input {
+    margin: 10px 0px 15px 0px;
+    width: 35%;
+    color: #777;
+    caret-color: #4aaaa5;
+    /* font-style: oblique; */
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 5px;
+}
+
+.textarea_message {
+    width: 100%;
+    margin: 10px 0px 10px 0px;
+    color: #777;
+    caret-color: #4aaaa5;
+}
+
+.input_submit {
+    padding: 5px 20px;
+    color: #fff;
+    background-color: #4aaaa5;
+    text-align: center;
+    margin-bottom: 20px;
+    border-style: none;
+}
+
+.footer {
+    clear: both;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-top-style: solid;
+    border-top-color: #4aaaa5;
+    border-top-width: 8px;
+    background-color: #666666;
+}
+
+.copyright {
+    padding: 50px;
+    padding-bottom: 7px;
+    font-size: 12px;
+    color: #dddddd;
+    text-align: center;
+}
+
+@media screen and (max-width: 980px) {
+    .nav_container {
+        padding: 0 28% 0 5%;
+    }
+    .container {
+        width: 600px;
+        margin-left: 5%;
+    }
+    .input_name, .input_email {
+        margin: 10px 0px 15px 0px;
+        width: 100%;
+        font-size: 12px;
+        padding-left: 5px;
+    }
+    .input_submit {
+        font-size: 12px
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 22px
+    }
+    hr {
+        height: 1.5px;
+        margin: 20px 0 20px 0;
+    }
+    .name {
+        padding: 5;
+    }
+    .nav_container {
+        width: 90%;
+        margin: 0px auto 0;
+        padding: 0;
+    }
+    .container {
+        width: 90%;
+        margin: 25px auto 0;
+    }
+    .textarea_message {
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    body {
+        min-width: 300px;
+    }
+    h1 {
+        font-size: 22px
+    }
+    hr {
+        height: 1.5px;
+        margin: 20px 0 20px 0;
+    }
+    .nav_container {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .name {
+        padding: 5;
+        background-color: #4aaaa5;
+        color: #fff;
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .nav_menu {
+        float: none;
+        width: 100%;
+        padding: 10px 0;
+        text-align: center;
+    }
+    .container {
+        width: 90%;
+        margin: 25px auto 0;
+    }
+    .about_me_img {
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+    .project {
+        float: none;
+        display: block;
+        width: 220px;
+        height: 176px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+    .textarea_message {
+        height: 150px;
+    }
+}
